@@ -1,6 +1,6 @@
 # lita-your-weather
 
-TODO: Add a description of the plugin.
+lita-your-weather provides the ability to ask for the current weather conditions or for a 7 day forecast.
 
 ## Installation
 
@@ -9,11 +9,28 @@ Add lita-your-weather to your Lita instance's Gemfile:
 ``` ruby
 gem "lita-your-weather"
 ```
+$ bundle install
 
 ## Configuration
 
-TODO: Describe any configuration attributes the plugin exposes.
+Obtain an API Key from www.apixu.com
+Add the following to your lita_config.rb :
+
+``` ruby
+config.handlers.your_weather.default_location = 'City, State'
+config.handlers.your_weather.api_key = 'www.apixu.com Api Key'
+```
 
 ## Usage
 
-TODO: Describe the plugin's features and how to use them.
+Commands include:
+
+<!-- For current weather of default location -->
+weather c
+<!-- For current weather of specified location-->
+weather c Your_Location,Your_State
+
+<!-- For weather forecast of default location-->
+weather f
+<!-- For weather forecast of specified location-->
+weather f Your_Location,Your_State

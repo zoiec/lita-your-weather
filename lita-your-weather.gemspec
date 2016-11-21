@@ -1,12 +1,12 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-your-weather"
-  spec.version       = "0.1.0"
+  spec.version       = "0.0.1"
   spec.authors       = ["Zoie Carnegie"]
   spec.email         = ["zoie.carnegie@gmail.com"]
-  spec.description   = "TODO: Add a description"
-  spec.summary       = "TODO: Add a summary"
-  spec.homepage      = "TODO: Add a homepage"
-  spec.license       = "TODO: Add a license"
+  spec.description   = "lita-your-weather provides the ability to ask for the current weather conditions or for a 7 day forecast."
+  spec.summary       = "lita-your-weather provides the ability to ask for the current weather conditions or for a 7 day forecast."
+  spec.homepage      = "http://zoiecarnegie.com"
+  spec.license       = "MIT"
   spec.metadata      = { "lita_plugin_type" => "handler" }
 
   spec.files         = `git ls-files`.split($/)
