@@ -17,7 +17,7 @@ Obtain an API Key from www.apixu.com
 Add the following to your lita_config.rb :
 
 ``` ruby
-config.handlers.your_weather.default_location = 'City, State'
+config.handlers.your_weather.default_location = 'City, State, Country'
 config.handlers.your_weather.api_key = 'www.apixu.com Api Key'
 ```
 
@@ -26,11 +26,11 @@ config.handlers.your_weather.api_key = 'www.apixu.com Api Key'
 Commands include:
 
 <!-- For current weather of default location -->
-weather c
+$ weather or $ weather c
 <!-- For current weather of specified location-->
-weather c Your_Location,Your_State
+$ weather c Your_Location,Your_State,Your_Country
 
 <!-- For weather forecast of default location-->
-weather f
+$ weather f
 <!-- For weather forecast of specified location-->
-weather f Your_Location,Your_State
+$ weather f Your_Location,Your_State,Your_Country
