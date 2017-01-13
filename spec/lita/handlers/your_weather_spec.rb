@@ -2,15 +2,27 @@ require "spec_helper"
 
 describe Lita::Handlers::YourWeather, lita_handler: true do
 
-  it "route weather to correct method" do
-    is_expected.to route("weather").to(:weather_current)
+  it "will route lita weather to the weather method" do
+    is_expected.to_not route("weather").to(:weather)
   end
 
-  it "route weather f to correct method" do
-    is_expected.to route("weather c").to(:weather_current)
+  it "will route lita weather c to the weather method" do
+    is_expected.to_not route("weather c").to(:weather)
   end
 
-  it "route weather f to correct method" do
-    is_expected.to route("weather f").to(:weather_forecast)
+  it "will route lita weather f to the weather method" do
+    is_expected.to_not route("weather f").to(:weather)
+  end
+
+  it "will not route weather" do
+    is_expected.to_not route("weather")
+  end
+
+  it "will not route weather c" do
+    is_expected.to_not route("weather c")
+  end
+
+  it "will not route weather f" do
+    is_expected.to_not route("weather f")
   end
 end

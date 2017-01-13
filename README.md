@@ -1,6 +1,6 @@
 # lita-your-weather
 
-lita-your-weather provides the ability to ask for the current weather conditions or for a 7 day forecast.
+lita-your-weather provides the ability to ask for the current weather conditions or for a 7 day forecast. This gem uses the www.apixu.com api to get the current weather and a 7 day weather forecast.
 
 ## Installation
 
@@ -26,11 +26,11 @@ config.handlers.your_weather.api_key = 'www.apixu.com Api Key'
 Commands include:
 
 <!-- For current weather of default location -->
-$ weather or $ weather c
+$ lita weather or $ lita weather c
 <!-- For current weather of specified location-->
-$ weather c Your_Location,Your_State,Your_Country
+$ lita weather c Your_Location,Your_State,Your_Country
 
 <!-- For weather forecast of default location-->
-$ weather f
+$ lita weather f
 <!-- For weather forecast of specified location-->
-$ weather f Your_Location,Your_State,Your_Country
+$ lita weather f Your_Location,Your_State,Your_Country
