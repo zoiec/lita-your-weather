@@ -17,7 +17,7 @@ module Lita
       def weather(response)
           location = get_location(response.matches[0][0])
 
-          if response.message.body.eql? 'weather f'
+          if response.message.body.include? 'weather f'
             data = request('/forecast.json?key=' + config.api_key + '&days=7', location)
           else
             data = request('/current.json?key=' + config.api_key , location)
@@ -26,7 +26,7 @@ module Lita
           if data['error']
             response.reply('Error: ' + data['error']['message'])
           else
-            if response.message.body.eql? 'weather f'
+            if response.message.body.include? 'weather f'
               response.reply('The forecast for ' + data['location']['name'] + ', ' + data['location']['region'] + ', ' + data['location']['country'] + ':')
               data['forecast']['forecastday'].each do |object|
                 response.reply('On ' + object['date'] + ' forecasted is a high of ' +  object['day']['maxtemp_c'].to_s + "\xC2\xB0" + 'C' + ' and a low of ' + object['day']['mintemp_c'].to_s + "\xC2\xB0" + 'C It is expected to be ' + object['day']['condition']['text'] )
