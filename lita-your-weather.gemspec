@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-your-weather"
-  spec.version       = "0.0.4"
+  spec.version       = "0.0.5"
   spec.authors       = ["Zoie Carnegie"]
   spec.email         = ["zoie.carnegie@gmail.com"]
   spec.description   = "lita-your-weather provides the ability to ask for the current weather conditions or for a 7 day forecast."

@@ -25,12 +25,17 @@ config.handlers.your_weather.api_key = 'www.apixu.com Api Key'
 
 Commands include:
 
-<!-- For current weather of default location -->
+<!-- Current weather of default location -->
 $ lita weather or $ lita weather c
-<!-- For current weather of specified location-->
-$ lita weather c Your_Location,Your_State,Your_Country
+<!-- Current weather of specified location-->
+$ lita weather c <location>
 
-<!-- For weather forecast of default location-->
+<!-- Weather forecast of default location-->
 $ lita weather f
-<!-- For weather forecast of specified location-->
-$ lita weather f Your_Location,Your_State,Your_Country
+<!-- Weather forecast of specified location-->
+$ lita weather f <location>
+
+<!-- Weather images from default location-->
+$ lita weather i <location>
+<!-- Weather images-->
+$ lita weather i <location>
