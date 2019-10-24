@@ -7,9 +7,9 @@ lita-your-weather provides the ability to ask for the current weather conditions
 Add lita-your-weather to your Lita instance's Gemfile:
 
 ``` ruby
-gem "lita-your-weather"
+gem 'lita-your-weather'
 ```
-$ bundle install
+`$ bundle install`
 
 ## Configuration
 
@@ -26,16 +26,18 @@ config.handlers.your_weather.api_key = 'www.apixu.com Api Key'
 Commands include:
 
 <!-- Current weather of default location -->
-$ lita weather or $ lita weather c
+`$ lita weather`
+
+`$ lita weather c`
 <!-- Current weather of specified location-->
-$ lita weather c <location>
+`$ lita weather c <location>`
 
 <!-- Weather forecast of default location-->
-$ lita weather f
+`$ lita weather f`
 <!-- Weather forecast of specified location-->
-$ lita weather f <location>
+`$ lita weather f <location>`
 
 <!-- Weather images from default location-->
-$ lita weather i <location>
+`$ lita weather i <location>`
 <!-- Weather images-->
-$ lita weather i <location>
+`$ lita weather i <location>`
